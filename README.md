@@ -14,16 +14,16 @@ Algorithms Visualization is a project aimed at visualizing various sorting algor
 
 ## Installation
 
-1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/ahmedllshafiey/Algorithms-Visualization.git
-   cd Algorithms-Visualization
-   ```
+**Clone the repository**:
+ ```sh
+ git clone https://github.com/ahmedllshafiey/Algorithms-Visualization.git
+  cd Algorithms-Visualization
+ ```
 
-2. **Install dependencies**:
-   ```sh
-   npm install
-   ```
+**Install dependencies**:
+ ```sh
+ npm install
+ ```
 
 ## Usage
 
@@ -32,7 +32,7 @@ Algorithms Visualization is a project aimed at visualizing various sorting algor
 To start the development server with hot-reloading on changes:
 
 ```sh
-npm run dev
+npm start
 ```
 
 ### Build
@@ -41,14 +41,6 @@ To build the project:
 
 ```sh
 npm run build
-```
-
-### Preview
-
-To preview the built project:
-
-```sh
-npm run serve
 ```
 
 ## Project Structure
@@ -63,51 +55,8 @@ npm run serve
 │   └── Bubble.ts           # TypeScript class for Bubble Sort visualization
 ├── index.html              # Main HTML file
 ├── tsconfig.json           # TypeScript configuration
-├── vite.config.ts          # Vite configuration
 ├── package.json            # Project metadata and scripts
 └── LICENSE                 # MIT License
-```
-
-## Configuration
-
-### TypeScript Configuration
-
-The `tsconfig.json` file is set to output JavaScript files into a `build` directory:
-
-```json
-{
-  "compilerOptions": {
-    "outDir": "./build",
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
-}
-```
-
-### Vite Configuration
-
-The `vite.config.ts` file is configured to use polling for file changes, ensuring that the server restarts on any change:
-
-```ts
-import { defineConfig } from 'vite';
-
-export default defineConfig({
-  build: {
-    outDir: 'build',
-    rollupOptions: {
-      input: 'index.html'
-    }
-  },
-  server: {
-    watch: {
-      usePolling: true
-    }
-  }
-});
 ```
 
 ## License

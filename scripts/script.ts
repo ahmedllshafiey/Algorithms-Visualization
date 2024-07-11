@@ -85,5 +85,5 @@ class Bubble {
     }
   }
 
-  let sort: Bubble = new Bubble(30, 10);
+  let sort: Bubble = new Bubble(70, 5);
   sort.bubble_sort(sort.arr);
